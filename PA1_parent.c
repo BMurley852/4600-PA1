@@ -37,6 +37,9 @@ pid_t create_child()
 
 int main()
 {
+    //Parent Proc
+
+    
     pid_t children[NUMBER_CHILDREN];
     int sum = 0, children_created = 0, children_terminated = 0;
 

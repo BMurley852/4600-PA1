@@ -6,6 +6,8 @@
 
 int main()
 {
+
+    // Seed rand based on PID, create random number and delay, return random number
     srand(getpid());
 
     int random = (rand() % 100)+ 1;
