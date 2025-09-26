@@ -23,7 +23,7 @@ pid_t create_child()
     {
         // Child
 
-        if (execve("./PA1_child.c", NULL, NULL) == -1)
+        if (execve("./PA1_child", NULL, NULL) == -1)
         {
             printf("Execve error");
             exit(EXIT_FAILURE);
@@ -67,6 +67,6 @@ int main()
     
 
     printf("\n\nChildren created: %d\n", children_created);
-    printf("Children successfully terminated: %d", children_terminated);
+    printf("Children successfully terminated: %d\n", children_terminated);
     printf("Sum of numbers returned by children: %d\n", sum);
 }
